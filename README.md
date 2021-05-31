@@ -32,6 +32,11 @@ python Main.py -w [UserQ]
 #Use Bert+(W2V+ElasticSearch)
 python Main.py -c [UserQ]
 ```
+### Collaborators
+
+Guan Ling Chou 周冠玲 
+
+Ou Ting Yun    歐亭昀
 ### Reference
 
 https://github.com/zake7749/word2vec-tutorial/blob/master/demo.py
