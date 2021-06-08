@@ -8,7 +8,7 @@
 ### Environment
 
 
-常見問題集：[國立中央大學計算機中心常見問題集(FAQ)](https://www.cc.ncu.edu.tw/page/qna)
+(預設) 常見問題集：[國立中央大學計算機中心常見問題集(FAQ)](https://www.cc.ncu.edu.tw/page/qna)
 ```python
 elasticsearch = 7.10.2
 tensorflow    = 2.4.1
@@ -35,6 +35,27 @@ python Main.py -w [UserQ]
 #Use Bert+(W2V+ElasticSearch)
 python Main.py -c [UserQ]
 ```
+### Train bert model according to different FAQ set
+
+將問題集依照 `QA\Total_User_Q.xlsx` 內名為 `Std_Q_All`的工作表排列，並在`A1`填入問題數量。
+
+填完後請執行以下指令
+
+格式
+```bash
+>python bert_train.py -fp <file of the standard questions>
+            	      -sn <whether you have the sheet name of the file>
+	                  -mp <the path for the model to store>
+
+```
+範例
+```bash
+python bert_train.py -fp C:\Users\user\Desktop\Customer-Service-Chatbot-from-FAQ\QA\Total_User_Q.xlsx 
+		             -sn Std_Q_All 
+	        	     -mp C:\Users\user\Desktop\Customer-Service-Chatbot-from-FAQ\Model\bert.h5
+```
+
+
 ### Collaborators
 
 Guan Ling Chou 周冠玲 
@@ -43,3 +64,5 @@ Ou Ting Yun    歐亭昀
 ### Reference
 
 https://github.com/zake7749/word2vec-tutorial/blob/master/demo.py
+
+https://sci2lab.github.io/ml_tutorial/bert_farsi_sentiment/
