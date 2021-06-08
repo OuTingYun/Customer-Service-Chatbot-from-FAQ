@@ -64,3 +64,4 @@ Ou Ting Yun    歐亭昀
 ### Reference
 
 https://github.com/zake7749/word2vec-tutorial/blob/master/demo.py
+https://sci2lab.github.io/ml_tutorial/bert_farsi_sentiment/
