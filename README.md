@@ -39,6 +39,8 @@ python Main.py -c [UserQ]
 
 將問題集依照 `QA\Total_User_Q.xlsx` 內名為 `Std_Q_All`的工作表排列，並在`A1`填入問題數量。
 
+![imgs](https://github.com/OuTingYun/Customer-Service-Chatbot-from-FAQ/blob/master/README/Std_Q_All.png)
+
 填完後請執行以下指令
 
 格式
